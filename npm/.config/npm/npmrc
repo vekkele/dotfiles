@@ -1,0 +1,4 @@
+node-gyp=/Users/vlad/.nvm/versions/node/v16.20.1/bin/node-gyp
+state-dir=$XDG_STATE_HOME/pnpm-state
+store-dir=$XDG_DATA_HOME/pnpm-store
+python=python2
