@@ -1,6 +1,8 @@
 # Esentials (needed for instal.sh)
 brew "stow"
-brew ""
+brew "nvm"
+brew "go"
+brew "docker"
 
 # GUI Apps
 cask "bitwarden"

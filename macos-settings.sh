@@ -353,4 +353,3 @@ for app in "Activity Monitor" \
 	"Twitter" \
 	"iCal"; do
 	killall "${app}" &> /dev/null
-
