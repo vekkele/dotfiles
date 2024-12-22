@@ -26,9 +26,6 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Set dark mode
-defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
-
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -42,15 +39,6 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Sets the trackpad speed to 3
 defaults write -g com.apple.trackpad.scaling 0.875
-
-# Set three finger vertial swipe gesture to Mission Control
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -int 2
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 2
-
-
-# Set four finger vertial swipe gesture to Mission Control
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -int 2
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
 
 # Fn or 🌐︎ opens the Character Viewer for entering emoji, symbols, and more.
 defaults write com.apple.HIToolbox AppleFnUsageType -int 2
@@ -152,9 +140,6 @@ defaults write com.apple.finder "FXRemoveOldTrashItems" -bool "true"
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
-
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
 
@@ -170,10 +155,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
-defaults write com.apple.dock persistent-apps -array
-
-# Speed up Mission Control animations
-defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults delete com.apple.dock persistent-apps
 
 # Group windows by application in Mission Control
 defaults write com.apple.dock expose-group-by-app -bool true
@@ -188,7 +170,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
 
 # Remove the animation when hiding/showing the Dock
-defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.2
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true

@@ -72,9 +72,19 @@ git config --global color.ui true
 echo
 echo "Git is ready!"
 
+# Manual login to browser and github
+echo
+echo "It's time to login to github in browser"
+echo "1. Login to bitwarder"
+echo "2. Open browser and login to it"
+echo "3. Login to github"
+echo
+echo "Press [Enter] when you are done!"
+read
+
 # Add ssh setup for github
 echo
-echo " Generating keys for github 🔑"
+echo "Generating keys for github 🔑"
 echo
 
 mkdir -p ~/.ssh/github
@@ -90,9 +100,9 @@ EOL
 pbcopy < ~/.ssh/github/id_ed25519.pub
 echo
 echo "Ssh key for github is copied to clipboard."
-echo "Open https://github.com/settings/keys in browser and paste this key"
+echo "Open github settings and add this ssh key"
 echo
-echo "Press any key when you are done"
+echo "Press [Enter] key when you are done"
 read
 
 # Manual setup
@@ -101,9 +111,9 @@ echo "Setup is finished 🎉"
 echo "Follow these steps to manually setup the rest of the system:"
 echo
 echo "Apply rest of system settings"
-echo "1. Setup control center"
+echo "1. Login to apple id"
 echo
-echo "2. Touch ID & Password -> Add fingers"
+echo "2. Setup control center"
 echo
 echo "3. Keyboard"
 echo "  Adjust keyboard brightness in low light -> disable"
@@ -112,17 +122,22 @@ echo "  Turn keyboard backlight off after inactivity -> After 5 seconds"
 echo "  Keyboard -> Keyboard shortcuts"
 echo "    Spotlight -> Disable search (Replaced with Raycast)"
 echo "    Modifier Keys -> Caps Lock -> No Action"
-echo "  Keyboard -> Input Sources"
-echo "    Add 'ABC' and 'Russian - PC'"
+echo "4. Trackpad"
+echo "  Point & Click"
+echi "    Light Click"
+echi "    Quiet Click"
+echi "  Gestures"
+echi "    Mission control and Expose with three fingers"
 echo
-echo "4. Internet Accounts -> login to google accounts"
+echo "5. Internet Accounts -> login to google accounts"
 echo
-echo "Press any key to continue"
+echo "Press [Enter] to continue"
 read
 
 echo
 echo "Manually setup some apps"
 echo "  Setup toolbar with ICE"
 echo "  Copy Raycast settings"
+echo "  Setup sidebar in Finder"
 echo
 echo "That's it! 🥳"
