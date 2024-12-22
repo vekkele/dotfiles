@@ -34,8 +34,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 6
+defaults write NSGlobalDomain InitialKeyRepeat -int 25
 
 # Sets the trackpad speed to 3
 defaults write -g com.apple.trackpad.scaling 0.875
@@ -169,8 +169,8 @@ defaults write com.apple.dock autohide -bool true
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
 
-# Remove the animation when hiding/showing the Dock
-defaults write com.apple.dock autohide-time-modifier -float 0.2
+# Change the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0.15
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
