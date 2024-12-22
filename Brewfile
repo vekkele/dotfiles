@@ -8,6 +8,7 @@ brew "eza"
 brew "zoxide"
 brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 
 # GUI Apps
 cask "bitwarden"
