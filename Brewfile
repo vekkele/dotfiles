@@ -6,6 +6,8 @@ brew "docker"
 brew "starship"
 brew "eza"
 brew "zoxide"
+brew "zsh-autocomplete"
+brew "zsh-autosuggestions"
 
 # GUI Apps
 cask "bitwarden"
