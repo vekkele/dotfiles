@@ -4,6 +4,8 @@ brew "nvm"
 brew "go"
 brew "docker"
 brew "starship"
+brew "eza"
+brew "zoxide"
 
 # GUI Apps
 cask "bitwarden"
