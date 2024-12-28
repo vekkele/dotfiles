@@ -17,7 +17,9 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 
 export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/flutter/bin:$HOME/.pub-cache/bin:$HOME/go/bin"
-export NVM_DIR="$XDG_DATA_HOME/nvm"
+export PATH="$(brew --prefix pnpm@8)/bin:$PATH"
+
+export NVM_DIR="$(brew --prefix nvm)"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 

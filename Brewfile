@@ -1,6 +1,7 @@
 # Esentials (needed for instal.sh)
 brew "stow"
 brew "nvm"
+brew "pnpm@8"
 brew "go"
 brew "docker"
 brew "starship"
