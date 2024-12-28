@@ -44,6 +44,15 @@ echo
 echo "Cleaning up... 🧹"
 brew update && brew upgrade && brew cleanup && brew doctor
 
+# Fixing docker install by homebrew
+# Wrong linking path for docker-compose
+# More info here https://forums.docker.com/t/docker-compose-stopped-working/136273/10
+echo
+echo "Fixing docker-compose link installed by homebrew..."
+sudo mkdir -p /usr/local/lib/docker/cli-plugins
+sudo ln -s /Applications/Docker.app/Contents/Resources/cli-plugins/docker-compose /usr/local/lib/docker/cli-plugins/docker-compose
+sudo rm -rf /usr/local/cli-plugins
+
 # Settings
 echo
 echo "Configuring default system settings... 💻"
