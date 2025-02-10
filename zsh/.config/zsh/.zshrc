@@ -16,7 +16,7 @@ alias ls="eza --icons=always"
 eval "$(zoxide init zsh)"
 alias cd="z"
 
-export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/flutter/bin:$HOME/.pub-cache/bin:$HOME/go/bin"
+export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/flutter/bin:$HOME/.pub-cache/bin:$GOPATH/bin"
 export PATH="$(brew --prefix pnpm@8)/bin:$PATH"
 
 export NVM_DIR="$(brew --prefix nvm)"
