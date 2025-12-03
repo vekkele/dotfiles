@@ -62,7 +62,7 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 # Dotfiles
 echo
 echo "Setting up dotfiles... 👾"
-stow -t ~ karabiner npm starship wezterm zsh
+stow -t ~ karabiner npm starship wezterm zsh mpv
 
 # Setup Git
 echo
