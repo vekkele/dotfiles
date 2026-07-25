@@ -1,3 +1,5 @@
+autoload -U +X compinit && compinit
+
 eval "$(starship init zsh)"
 
 # history setup
@@ -9,14 +11,7 @@ setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
 
-# ---- Eza (better ls) -----
-alias ls="eza --icons=always"
-
-# ---- Zoxide (better cd) ----
-eval "$(zoxide init zsh)"
-alias cd="z"
-
-export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/flutter/bin:$HOME/.pub-cache/bin:$GOPATH/bin"
+export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH:$HOME/flutter/bin:$HOME/.pub-cache/bin:$GOPATH/bin"
 export PATH="$(brew --prefix pnpm@8)/bin:$PATH"
 
 export NVM_DIR="$(brew --prefix nvm)"
@@ -25,3 +20,13 @@ export NVM_DIR="$(brew --prefix nvm)"
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# ---- Eza (better ls) -----
+alias ls="eza --icons=always"
+
+# ---- Zoxide (better cd) ----
+eval "$(zoxide init zsh)"
+alias cd="z"
+
+# ----- GitButler (drop in replacement for Git) ------
+eval "$(but completions zsh)"

@@ -1,2 +1,4 @@
 .DS_Store
 .zsh_sessions/
+.zcompdump
+mpv/.config/mpv/watch_later/
