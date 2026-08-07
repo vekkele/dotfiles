@@ -10,6 +10,10 @@ brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "mpv"
+brew "bat"
+brew "tldr"
+brew "ripgrep"
+brew "fd"
 
 # GUI Apps
 cask "docker-desktop"
