@@ -34,6 +34,7 @@ cask "raycast"
 cask "chatgpt"
 cask "google-drive"
 cask "kde-connect"
+cask "dbeaver-community"
 
 ## Work
 cask "notion"
