@@ -2,6 +2,7 @@ onboarding = false
 
 [keys]
 prefix = "ctrl+a"
+switch_tab = ["prefix+1..9", "cmd+1..9"]
 focus_pane_left = "ctrl+alt+h"
 focus_pane_down = "ctrl+alt+j"
 focus_pane_up = "ctrl+alt+k"

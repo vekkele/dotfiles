@@ -4,8 +4,31 @@ theme = Catppuccin Mocha
 window-padding-x = 8
 window-padding-y = 8
 
+# Hide the macOS titlebar and traffic-light buttons.
+macos-titlebar-style = hidden
+
 # Forward Option as Alt so Herdr can receive Ctrl+Option shortcuts.
 macos-option-as-alt = true
+
+# Let Herdr handle Cmd+1..9 instead of Ghostty's tabs.
+keybind = cmd+1=unbind
+keybind = cmd+digit_1=unbind
+keybind = cmd+2=unbind
+keybind = cmd+digit_2=unbind
+keybind = cmd+3=unbind
+keybind = cmd+digit_3=unbind
+keybind = cmd+4=unbind
+keybind = cmd+digit_4=unbind
+keybind = cmd+5=unbind
+keybind = cmd+digit_5=unbind
+keybind = cmd+6=unbind
+keybind = cmd+digit_6=unbind
+keybind = cmd+7=unbind
+keybind = cmd+digit_7=unbind
+keybind = cmd+8=unbind
+keybind = cmd+digit_8=unbind
+keybind = cmd+9=unbind
+keybind = cmd+digit_9=unbind
 
 # Option+h/j/k/l moves the cursor left/down/up/right.
 keybind = alt+h=csi:D
