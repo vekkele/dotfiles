@@ -1,6 +1,6 @@
 # Readable defaults for Herdr and coding agents.
 font-size = 14
-theme = Catppuccin Mocha
+theme = TokyoNight
 window-padding-x = 8
 window-padding-y = 8
 
