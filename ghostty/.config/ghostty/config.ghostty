@@ -1,0 +1,14 @@
+# Readable defaults for Herdr and coding agents.
+font-size = 14
+theme = Catppuccin Mocha
+window-padding-x = 8
+window-padding-y = 8
+
+# Forward Option as Alt so Herdr can receive Ctrl+Option shortcuts.
+macos-option-as-alt = true
+
+# Option+h/j/k/l moves the cursor left/down/up/right.
+keybind = alt+h=csi:D
+keybind = alt+j=csi:B
+keybind = alt+k=csi:A
+keybind = alt+l=csi:C
