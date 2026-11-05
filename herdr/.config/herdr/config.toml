@@ -1,12 +1,16 @@
 onboarding = false
 
 [keys]
-prefix = "ctrl+a"
-switch_tab = ["prefix+1..9", "cmd+1..9"]
-focus_pane_left = "ctrl+alt+h"
-focus_pane_down = "ctrl+alt+j"
-focus_pane_up = "ctrl+alt+k"
-focus_pane_right = "ctrl+alt+l"
+# Ghostty sends Ctrl+B followed by these commands.
+prefix = "ctrl+b"
+switch_tab = "prefix+1..9"
+switch_workspace = "prefix+shift+1..9"
+previous_workspace = "prefix+ctrl+p"
+next_workspace = "prefix+ctrl+n"
+focus_pane_left = "prefix+h"
+focus_pane_down = "prefix+j"
+focus_pane_up = "prefix+k"
+focus_pane_right = "prefix+l"
 
 [ui]
 status_indicators = "dots"
