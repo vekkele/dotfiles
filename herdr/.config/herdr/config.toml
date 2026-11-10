@@ -13,11 +13,11 @@ focus_pane_up = "prefix+k"
 focus_pane_right = "prefix+l"
 
 [ui]
-status_indicators = "dots"
+status_indicators = "symbols"
 # Make task names explicit and label agents inside split panes.
 prompt_new_workspace_name = true
 show_agent_labels_on_pane_borders = true
 
 [theme]
-name = "tokyo-night"
+name = "catppuccin"
 auto_switch = false
